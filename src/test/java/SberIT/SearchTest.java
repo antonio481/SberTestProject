@@ -52,7 +52,7 @@ public class SearchTest {
         notebooksPage.clickLenovoCheckbox();
         notebooksPage.waitSuccessSearch();
         notebooksPage.findNotebooks();
-        notebooksPage.checkNumberOfNotebooks(36);
+        notebooksPage.checkNumberOfNotebooks(48);
         notebooksPage.checkProducersOfNotebooks();
     }
 
@@ -69,7 +69,7 @@ public class SearchTest {
         tabletsPage.clickHuaweiCheckbox();
         tabletsPage.clickLenovoCheckbox();
         notebooksPage.waitSuccessSearch();
-        tabletsPage.checkNumberOfPrices(27);
+        tabletsPage.checkNumberOfPrices(48);
         tabletsPage.checkPricesOfTablets(2000, 25000);
     }
 

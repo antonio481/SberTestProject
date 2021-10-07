@@ -60,7 +60,7 @@ class NotebooksPage {
         Screen.takeScreen("Скрин 'HP' чекбокс", driver);
     }
 
-    @Step
+
     void waitSuccessSearch() {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.visibilityOfElementLocated(messageSuccessSearch));

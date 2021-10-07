@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: SberIT.SearchTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.734 s - in SberIT.SearchTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.983 s - in SberIT.SearchTest
