@@ -32,8 +32,7 @@ class TabletsPage {
     private List<WebElement> pricesModels;
     @FindBy(xpath = "//div[@class='_3NaXx _33ZFz _2m5MZ c5gK7']/span[@data-autotest-currency='₽']/span[1]")
     private List<WebElement> pricesOffers;
-    @FindBy(xpath = "//*[@data-zone-name='search-filter']//*[text()='Показать всё']")
-    private WebElement showAllBtn;
+
 
     @Step
     void inputPriceToField(String price) {
@@ -71,6 +70,7 @@ class TabletsPage {
     void checkNumberOfPrices(int expectedNumber) {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         wait.until(ExpectedConditions.visibilityOfAllElements(pricesModels));
+        wait.until(ExpectedConditions.visibilityOfAllElements(pricesOffers));
         Screen.takeScreen("Скрин прогруженной страницы", driver);
         Assert.assertEquals(expectedNumber, pricesModels.size() + pricesOffers.size());
     }

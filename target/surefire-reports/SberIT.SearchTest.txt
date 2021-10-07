@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: SberIT.SearchTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.983 s - in SberIT.SearchTest
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 43.774 s <<< FAILURE! - in SberIT.SearchTest
+notebookTest(SberIT.SearchTest)  Time elapsed: 22.065 s  <<< FAILURE!
+java.lang.AssertionError: expected:<48> but was:<46>
+	at SberIT.SearchTest.notebookTest(SearchTest.java:55)
+
+tabletTest(SberIT.SearchTest)  Time elapsed: 21.412 s  <<< FAILURE!
+java.lang.AssertionError: expected:<48> but was:<26>
+	at SberIT.SearchTest.tabletTest(SearchTest.java:72)
+
